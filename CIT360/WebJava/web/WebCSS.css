@@ -1,0 +1,23 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 8, 2019, 12:56:27 PM
+    Author     : Bryan
+*/
+
+fieldset.name {
+    display: grid;
+    width: min-content;
+    grid-gap: 15px;
+}
+
+fieldset.name label {
+    padding: 10px 0 10px 0;
+}
+
+body p {
+    font-size: 20px;
+}
