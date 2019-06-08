@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact Information</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link type="text/css" rel="stylesheet" href="WebCSS.css">
+    </head>
+    <body>
+        <div class="body-title">
+            <h1>Contact Information Submittal Form</h1>
+        </div>
+        <form action="WebServlet" method="post">
+            <fieldset class="name">
+                <legend>Name and Contact Information</legend>
+                <label class="above">First Name * <input type="text" name="fname" pattern="[A-z]{5,}" title="Only letters please" autofocus required></label>
+                <label class="above">Last Name * <input type="text" name="lname" pattern="[A-z]{5,}" required></label>
+                <label class="above">Email * <input type="email" name="email" placeholder="example@email.com" required></label>
+                <label class="above">Phone Number * <input type="tel" name="tel" placeholder="1234567890" pattern="[0-9]{7,}" required></label>
+                <input class="above" type="submit" value="Click to save">
+            </fieldset>
+        </form>
+    </body>
+</html>
